@@ -18,3 +18,8 @@ This project includes :
 
 <img width="1388" alt="Screen Shot 2021-12-08 at 6 32 27 PM" src="https://user-images.githubusercontent.com/59310528/145213396-01d833ad-f973-439d-a3e2-a0b7b7bf9fae.png">
 
+<img width="1388" alt="Screen Shot 2021-12-08 at 6 32 27 PM" src="https://user-images.githubusercontent.com/59310528/145213955-4c34e523-ada0-425f-b718-d6f9ec11a5e2.png">
+
+<img width="1388" alt="Screen Shot 2021-12-08 at 6 32 27 PM" src="https://user-images.githubusercontent.com/59310528/145214118-63dc8c2b-6af2-4f9d-a1f3-4845d64344e6.png">
+
+<img width="1388" alt="Screen Shot 2021-12-08 at 6 32 27 PM" src="https://user-images.githubusercontent.com/59310528/145214220-4d53c816-0356-445c-868d-caa07879c387.png">
