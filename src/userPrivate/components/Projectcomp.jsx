@@ -42,9 +42,10 @@ const Projectcomp = ({id,name,color,adminemail,title,date,desc}) => {
 
     return (
     <>
+    <Deleteproject name={name} id={id} adminemail={isAuth().email}/>
     <div class="column is-one-fifth">
     <button style={{"marginRight":"-12%","visibility":"hidden"}}/> 
-    {adminemail === isAuth().email ? <button className="delete" id="comp" onClick={onmodal} style={{"marginRight":"-12%"}}/> : null}
+    {adminemail === isAuth().email ? <button className="delete" onClick={onmodal} style={{"marginRight":"-12%"}}/> : null}
     <Hoverr>
         <div class="tile box m-3" style={{"backgroundColor":`${color}`,"cursor":"pointer"}} onClick={viewProject}>
         <div class="container" style={{"paddingTop":"40px","paddingBottom":"40px"}}>

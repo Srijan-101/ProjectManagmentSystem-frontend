@@ -67,8 +67,7 @@ const ProjectTask = ({ email, projectName }) => {
                                             <td>{ele.priority}</td>
                                             <td>{deadline.toLocaleDateString()}</td>
                                             <td>{ele.status}</td>
-                            
-                   
+                        
                                         </tr>
                                     )
                                 })

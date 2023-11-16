@@ -1,5 +1,5 @@
 import { remove } from 'js-cookie';
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import { isAuth } from '../../helper/helper';
 import axios from 'axios'
 import DatePicker from "react-datepicker";
@@ -20,6 +20,13 @@ const Addproject = ({onremovee}) => {
         loading : false,
         type : 'is-danger'
     }
+
+    let today = new Date().toISOString().split('T')[0];
+
+    useEffect(() => {
+        document.getElementById('dateInput').min = today;
+    },[]);
+   
     
     const [value,setValue] = useState(initialValue);
     const [sDate,setDate] = useState(new Date());
@@ -108,7 +115,7 @@ const Addproject = ({onremovee}) => {
                     <textarea  onChange={onchange('projectDescription')}  value = {projectDescription}  id="textarea" className="textarea mb-4" placeholder="e.g. Hello world"></textarea>
                     
                     <p className="subtitle is-6 mb-3" style={{ 'color': "grey", "fontSize": "14px" }}>Deadline</p>
-                    <DatePicker className="mb-4" selected={sDate} onChange={(date) => setDate(date)} />
+                    <DatePicker id="dateInput" className="mb-4" selected={sDate} onChange={(date) => setDate(date)} />
                     
                     <div className="columns is-multiline">
         

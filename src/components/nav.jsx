@@ -2,6 +2,7 @@ import { signOut } from '../helper/helper'
 import {Link} from 'react-router-dom'
 
 const NavBar = () => {
+
   const onclick = (e) => {
     e.preventDefault();
     signOut();
@@ -30,10 +31,12 @@ const NavBar = () => {
             home 
           </Link>
           </div>
+          <div className="navbar-end mr-6">
+            <a className="navbar-item">
+               <button class="button is-info" onClick={(e) => onclick(e)}>Logout</button>
+            </a>
+          </div>
         </div>
-
-
-
     </nav>
   )
 }
